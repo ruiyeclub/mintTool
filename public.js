@@ -104,7 +104,7 @@ const pendingTrasactions = async () => {
   var contract = new web3.eth.Contract(json, targetContract);
 
   //-----------------------------------------------------------------
-  //--------------- Change this function every time------------------
+  //--------------- todo Change this function every time------------------
   let extraData =  await contract.methods.mintSAC(config.number);
   //-----------------------------------------------------------------
   //-----------------------------------------------------------------
@@ -127,7 +127,7 @@ const pendingTrasactions = async () => {
         if(decodedData){
           //console.log(decodedData);
           //-----------------------------------------------------------------
-          //--------------- Change this function every time------------------
+          //--------------- todo Change this function every time------------------
           if((decodedData.name == 'flipPublicSaleState')){
           //-----------------------------------------------------------------
           //-----------------------------------------------------------------
